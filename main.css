@@ -1,0 +1,338 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Economica", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  -webkit-backface-visibility: hidden;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.header {
+  height: 100vh;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.content {
+  max-width: 49rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+}
+
+.header-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header-video video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.header-overlay {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background: #303952;
+  opacity: 0.4; */
+}
+
+.header-content {
+  z-index: 2;
+}
+
+@media (max-width: 960px) {
+  .content {
+    padding: 0 3rem 0 rem;
+  }
+}
+
+.divContent{
+    background: black;
+    opacity: 0.7;
+    width: 35%;
+    height: 75%;
+    position:absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 10%;
+    border-radius: 5px;
+   /* width:200px; */
+}
+
+.imagenContent{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.btnContent{
+    text-align: center;
+}
+
+.formulario{
+    margin-top: 5%;
+}
+
+
+/* Input */
+
+.form__label {
+    font-family: 'Bangers', cursive;
+    font-size: 0.8rem;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+    transform: translateY(0rem);
+}
+
+.form__input {
+    font-family: 'Bangers', cursive;
+    color: #333;
+    font-size: 1.2rem;
+        margin: 0 auto;
+    padding: 1.5rem 2rem;
+    border-radius: 0.2rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 90%;
+    display: block;
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s;
+    height: 20px;
+}
+
+.form__input:placeholder-shown + .form__label {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(-4rem);
+    transform: translateY(-4rem);
+}
+
+  /* Boton */
+
+a {
+    font-family: 'Bangers', cursive;
+    font-size: 1.1rem;
+    padding: 1rem 3rem;
+    color: #f4f4f4;
+    text-transform: uppercase;
+}
+
+.btn {
+    text-decoration: none;
+    border: 1px solid rgb(146, 148, 248);
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    width: 60%;
+    margin-top: 15px;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+    box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+    transform: scale(1.1);
+}
+
+
+/* Controler */
+
+.divContentButtons{
+  font-family: 'Bangers', cursive;
+  background: black;
+  opacity: 0.7;
+  width: 75%;
+  height: 65%;
+  position:absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 10%;
+  border-radius: 5px;
+ /* width:200px; */
+}
+
+.titulo{
+  color: white; 
+  letter-spacing: 0.15em; 
+  text-align: center;
+  margin-top: 2%;
+}
+
+#gridOne{
+  text-align: center; 
+  color: white; 
+  margin-top: 4%;
+}
+/* Boton */
+
+
+.pulseVerde:hover,
+.pulseVerde:focus {
+ animation: pulseVerde 1s;
+ box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+
+@keyframes pulseVerde {
+ 0% {
+   box-shadow: 0 0 0 0 var(--hover);
+ }
+}
+
+.pulseVerde{
+ --color: green;
+ --hover: #6eef79;
+}
+
+/* ----------------------------------------- */
+
+
+.pulseRojo:hover,
+.pulseRojo:focus {
+ animation: pulseRojo 1s;
+ box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+
+@keyframes pulseRojo {
+ 0% {
+   box-shadow: 0 0 0 0 var(--hover);
+ }
+}
+
+.pulseRojo{
+ --color: red;
+ --hover: #fa4242;
+}
+
+/* ----------------------------------------- */
+
+
+.pulseAmarillo:hover,
+.pulseAmarillo:focus {
+ animation: pulseAmarillo 1s;
+ box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+
+@keyframes pulseAmarillo {
+ 0% {
+   box-shadow: 0 0 0 0 var(--hover);
+ }
+}
+
+.pulseAmarillo{
+ --color: yellow;
+ --hover: #f8fc29bb;
+}
+
+/* ----------------------------------------- */
+
+.pulseAzul:hover,
+.pulseAzul:focus {
+ animation: pulseAzul 1s;
+ box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+
+@keyframes pulseAzul {
+ 0% {
+   box-shadow: 0 0 0 0 var(--hover);
+ }
+}
+
+.pulseAzul{
+ --color: blue;
+ --hover: #4c49ff;
+}
+
+/* ----------------------------------------- */
+
+
+.pulseRGB:hover,
+.pulseRGB:focus {
+ animation: pulseRGB 1s;
+ box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+
+@keyframes pulseRGB {
+ 0% {
+   box-shadow: 0 0 0 0 var(--hover);
+ }
+}
+
+.pulseRGB{
+ --color: #ef6eae;
+ --hover: #ef8f6e;
+}
+
+/* ----------------------------------------- */
+
+
+.pulseSRGB:hover,
+.pulseSRGB:focus {
+ animation: pulseSRGB 1s;
+ box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+
+@keyframes pulseSRGB {
+ 0% {
+   box-shadow: 0 0 0 0 var(--hover);
+ }
+}
+
+.pulseSRGB{
+ --color: #ef6eae;
+ --hover: #ef8f6e;
+}
+
+/* ----------------------------------------- */
+
+
+button {
+ color: var(--color);
+ transition: 0.25s;
+}
+button:hover, button:focus {
+ border-color: var(--hover);
+ color: #fff;
+}
+
+button {
+ background: none;
+ border: 4px solid;
+ font: inherit;
+ line-height: 1;
+ margin: 0.5em;
+ padding: 1em 2em;
+ cursor: pointer;
+}
+
+  
+  
+  

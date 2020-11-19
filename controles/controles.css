@@ -1,0 +1,179 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    background-color: blueviolet;
+}
+
+.divContentButtons{
+    font-family: 'Bangers', cursive;
+    background: black;
+    opacity: 0.7;
+    width: 75%;
+    height: 65%;
+    position:absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 10%;
+    border-radius: 5px;
+   /* width:200px; */
+}
+
+.titulo{
+    color: white; 
+    letter-spacing: 0.15em; 
+    text-align: center;
+    margin-top: 2%;
+}
+
+#gridOne{
+    text-align: center; 
+    color: white; 
+    margin-top: 4%;
+}
+ /* Boton */
+
+
+ .pulseVerde:hover,
+ .pulseVerde:focus {
+   animation: pulseVerde 1s;
+   box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+ }
+ 
+ @keyframes pulseVerde {
+   0% {
+     box-shadow: 0 0 0 0 var(--hover);
+   }
+ }
+ 
+ .pulseVerde{
+   --color: green;
+   --hover: #6eef79;
+ }
+
+ /* ----------------------------------------- */
+
+
+ .pulseRojo:hover,
+ .pulseRojo:focus {
+   animation: pulseRojo 1s;
+   box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+ }
+ 
+ @keyframes pulseRojo {
+   0% {
+     box-shadow: 0 0 0 0 var(--hover);
+   }
+ }
+ 
+ .pulseRojo{
+   --color: red;
+   --hover: #fa4242;
+ }
+
+  /* ----------------------------------------- */
+
+
+ .pulseBlanco:hover,
+ .pulseBlanco:focus {
+   animation: pulseBlanco 1s;
+   box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+ }
+ 
+ @keyframes pulseBlanco {
+   0% {
+     box-shadow: 0 0 0 0 var(--hover);
+   }
+ }
+ 
+ .pulseBlanco{
+   --color: white;
+   --hover: #ffffffbb;
+ }
+
+  /* ----------------------------------------- */
+
+ .pulseAzul:hover,
+ .pulseAzul:focus {
+   animation: pulseAzul 1s;
+   box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+ }
+ 
+ @keyframes pulseAzul {
+   0% {
+     box-shadow: 0 0 0 0 var(--hover);
+   }
+ }
+ 
+ .pulseAzul{
+   --color: blue;
+   --hover: #4c49ff;
+ }
+
+  /* ----------------------------------------- */
+
+
+ .pulseRGB:hover,
+ .pulseRGB:focus {
+   animation: pulseRGB 1s;
+   box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+ }
+ 
+ @keyframes pulseRGB {
+   0% {
+     box-shadow: 0 0 0 0 var(--hover);
+   }
+ }
+ 
+ .pulseRGB{
+   --color: #ef6eae;
+   --hover: #ef8f6e;
+ }
+
+  /* ----------------------------------------- */
+
+
+ .pulseSRGB:hover,
+ .pulseSRGB:focus {
+   animation: pulseSRGB 1s;
+   box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+ }
+ 
+ @keyframes pulseSRGB {
+   0% {
+     box-shadow: 0 0 0 0 var(--hover);
+   }
+ }
+ 
+ .pulseSRGB{
+   --color: #ef6eae;
+   --hover: #ef8f6e;
+ }
+
+  /* ----------------------------------------- */
+ 
+ 
+ button {
+   color: var(--color);
+   transition: 0.25s;
+ }
+ button:hover, button:focus {
+   border-color: var(--hover);
+   color: #fff;
+ }
+ 
+ button {
+   background: none;
+   border: 4px solid;
+   font: inherit;
+   line-height: 1;
+   margin: 0.5em;
+   padding: 1em 2em;
+   cursor: pointer;
+ }
