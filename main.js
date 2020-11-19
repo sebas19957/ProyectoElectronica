@@ -4,7 +4,7 @@ $(document).ready(function () {
     $(document).on('click','.btn', function(){
         var usuario = document.getElementById('usuario').value;
         var password = document.getElementById('password').value;
-        if (usuario === 'sebastian' && password === 'electronica123') {
+        if (usuario === 'sebas' && password === 'e123') {
              $('#Content_animateDown').toggle("slow");
              $('#divContentButtons').show(1500);
         } else if(usuario === '' || password === ''){
