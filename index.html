@@ -119,7 +119,7 @@
             if (e.keyCode === 13 && !e.shiftKey) {
                 var usuario = document.getElementById('usuario').value;
                 var password = document.getElementById('password').value;
-                if (usuario === 'sebas' && password === 'e123') {
+                if (usuario === 'sebas' || usuario === 'Sebas' && password === 'e123') {
                     $('#Content_animateDown').toggle("slow");
                     $('#divContentButtons').show(1500);
                 } else if (usuario === '' || password === '') {
